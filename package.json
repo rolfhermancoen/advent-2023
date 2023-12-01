@@ -1,0 +1,12 @@
+{
+  "name": "advent-2023",
+  "version": "1.0.0",
+  "author": "Rolf Oldenkotte",
+  "license": "MIT",
+  "scripts": {
+    "start-01": "node 01/index.js"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}
