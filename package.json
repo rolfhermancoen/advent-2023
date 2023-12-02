@@ -4,7 +4,8 @@
   "author": "Rolf Oldenkotte",
   "license": "MIT",
   "scripts": {
-    "start-01": "node 01/index.js"
+    "start-01": "node 01/index.js",
+    "start-02": "node 02/index.js"
   },
   "dependencies": {
     "papaparse": "^5.4.1"
