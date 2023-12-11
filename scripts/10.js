@@ -294,13 +294,13 @@ class DayTen extends Day {
       }
     }
 
-    let mappedRooted = 0;
+    let mappedRooted = false;
     const mappedGridData = [...expandedGridData];
 
     mappedGridData[0][0].found = true;
     let cords = { x: 0, y: 0 };
 
-    while (mappedRooted < 3) {
+    while (!mappedRooted) {
       const currentNode = mappedGridData[cords.y][cords.x];
       const search = [-1, 0, 1];
 
@@ -361,7 +361,8 @@ class DayTen extends Day {
         (cords.x === mappedGridData[0].length &&
           cords.y === mappedGridData.length)
       ) {
-        mappedRooted++;
+        mappedRooted = true;
+        break;
       }
 
       cords = {
